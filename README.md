@@ -2,7 +2,7 @@ ipython_bidi_markdown
 =====================
 
 Add Right-to-left (RTL) support to Ipython's markdown cells. 
-Currntly support IPython  1.0 only. 
+Currently support IPython  1.0 only. 
 
 Using [bidiweb](https://github.com/hasenj/bidiweb) to to add Right-To-Left 
 properties to paragraphs that starts with Right-To-Left text (Arabic, Hebrew, Farsi, etc.).

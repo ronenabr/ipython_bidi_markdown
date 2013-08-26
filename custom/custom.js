@@ -6,7 +6,7 @@
 requirejs.config({
     shim: {
         'bidiweb.html_css': ['bidiweb'],
-        'bidiweb.style': ['bidiweb']
+        'bidiweb.css': ['bidiweb']
     }
 });
 
@@ -19,8 +19,8 @@ $([IPython.events]).on('app_initialized.NotebookApp', function(){
 
 
 
-     require(['custom/bidiweb'],function(style){
-        bidiweb.style('.rendered_html *');
+     require(['custom/bidiweb'],function(css){
+        bidiweb.css('.rendered_html *');
      })
 
      require(['custom/bidiweb'],function(html_css){
@@ -36,7 +36,7 @@ IPython.MarkdownCell.prototype.render =  function () {
             text = text_and_math[0];
             math = text_and_math[1];
             var html = marked.parser(marked.lexer(text));
-            html = bidiweb.html_style(html);
+            html = bidiweb.html_css(html);
             html = $(IPython.mathjaxutils.replace_math(html, math));
 
             // links in markdown cells should open in new tabs

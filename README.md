@@ -25,3 +25,8 @@ git clone https://github.com/ronenabr/ipython_bidi_markdown.git ~/.ipython/profi
 
 Restart your notebook server. You may also need to empty your browser cache.
 
+
+Thanks 
+=======
+* [Arieh](https://github.com/arieh), for the javascript support
+* Kyle Kelley and Matthias BUSSONNIER for help on the mailing list. See discussion at [IPython's mailing list](http://mail.scipy.org/pipermail/ipython-dev/2013-August/012218.html).
